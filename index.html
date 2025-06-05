@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuertoGames</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[url('https://wallpapercave.com/wp/wp11726455.jpg')]  bg-no-repeat bg-cover bg-center ">
+    <nav class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <a href="index.html">
+                <img src="assets/img/logosinbg.png" alt="Logo" class="h-16"> 
+            </a>
+            <span class="text-white text-2xl font-semibold">PuertoGames</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+            <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+            <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+            <button id="menuButton" class="text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            </button>
+        </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-800 p-4 space-y-4">
+            <a href="#" class="text-white hover:text-gray-400">Inicio</a>
+            <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+            <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full text-center text-white">
+        <div>
+            <h1 class="text-4xl font-extrabold mb-4">Bienvenido a PuertoGames</h1>
+            <p class="text-xl mb-6">Explora los mejores juegos para todas las plataformas.</p>
+            <a href="#catalogo" class="bg-blue-600 px-6 py-3 text-lg rounded-lg hover:bg-blue-700 transition">Explorar Catálogo</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sección Principal de Juegos -->
+    <section class="p-12 min-h-screen">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Juego 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg" alt="Juego 1" class="w-full h-56 object-cover">
+            <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Baldurs Gate 3</h3>
+            <p class="text-gray-600">Plataforma: PC | Precio: $40.000</p>
+            <a href="detalle3.html" class="mt-4 text-blue-500 hover:text-blue-700">Ver más</a>
+            </div>
+        </div>
+    
+        <!-- Juego 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://i.blogs.es/41c79d/rdr2_officialart2_desktop/1366_2000.jpeg" alt="Juego 2" class="w-full h-56 object-cover">
+            <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Red Dead Redemption 2</h3>
+            <p class="text-gray-600">Plataforma: PS5 | Precio: $60.000</p>
+            <a href="detalle5.html"="mt-4 text-blue-500 hover:text-blue-700">Ver más</a>
+            </div>
+        </div>
+    
+        <!-- Juego 3 -->
+        
+
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="https://images.ctfassets.net/xuwlxvgj0hyl/2Hddt0JUy8NYiLt91o4P5c/f93661c8f984b94bacd89223fcfad1b3/2250x1266_Ncom_TOTK" alt="Juego 4" class="w-full h-56 object-cover">
+            <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">The Legend Of Zelda: Tears of the Kingdom</h3>
+            <p class="text-gray-600">Plataforma: Nintendo Switch | Precio: $60.000</p>
+            <a href="detalle4.html" class="mt-4 text-blue-500 hover:text-blue-700">Ver más</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Sección de Categorías -->
+        <section class="py-12">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Explora por Categoría</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://img.redbull.com/images/c_crop,w_1280,h_640,x_0,y_0/c_auto,w_1200,h_630/f_auto,q_auto/redbullcom/2018/12/05/e5039b5f-da68-4106-afe6-233106b21e59/red-dead-redemption-2-post-epilogo" alt="Juego 1" class="w-full h-56 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Acción</h3>
+                        <p class="text-gray-600">Vive increíbles experiencias con persecuciones y disparos</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700">Ver más</button>
+                        </div>
+                    </div>
+            
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://alfabetajuega.com/hero/2018/10/168454.alfabetajuega-skyrim-epicidad-3-021116-4.jpg?width=1200&aspect_ratio=16:9" alt="Juego 1" class="w-full h-56 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Rol</h3>
+                        <p class="text-gray-600">Interpreta personajes épicos y conquista el mundo</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700">Ver más</button>
+                        </div>
+                    </div>
+            
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="https://wallpapers.com/images/featured/dark-souls-3-l5tab4snae2iftty.jpg" alt="Juego 1" class="w-full h-56 object-cover">
+                        <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Aventura</h3>
+                        <p class="text-gray-600">Explora mundos épicos y vive emocionantes aventuras</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700">Ver más</button>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+    <section class="bg-sky-700 py-16">
+        <div class="max-w-4xl mx-auto text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">¿Tienes dudas o quieres colaborar?</h2>
+        <p class="text-lg mb-6">Contáctanos y forma parte del mundo gamer con PuertoGames.</p>
+        <a href="contacto.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Ir a Contacto</a>
+        </div>
+    </section>
+
+    </section>
+
+    
+  
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo y nombre -->
+        <div class="flex items-center space-x-2">   
+            <span class="text-xl font-semibold">PuertoGames</span>
+        </div>
+    
+        <!-- Derechos de autor -->
+        <p class="mt-4 md:mt-0 text-sm">&copy; 2025 PuertoGames. Todos los derechos reservados.</p>
+    
+        <!-- Enlaces secundarios -->
+        <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-gray-400">Términos</a>
+            <a href="#" class="hover:text-gray-400">Soporte</a>
+            <a href="#" class="hover:text-gray-400">Política de privacidad</a>
+        </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
