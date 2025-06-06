@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vagabond - Detalle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-no-repeat bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.9)), url('https://m.media-amazon.com/images/I/A1btp-E1m6L.jpg');"></body>
+
+<nav class="bg-red-400 py-8 relative z-20">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <a href="index.html">
+          <img src="./images/ChatGPT Image 5 jun 2025, 14_04_10.png" alt="Logo MangaVerse" class="h-16" />
+        </a>
+        <span class="text-white text-2xl font-semibold">MangaVerse</span>
+      </div>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+        <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+        <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+        <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button id="menuButton" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-red-600 p-4 space-y-4">
+      <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+      <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+      <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+      <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 py-8">
+    <a href="catalogo.html" class="text-red-400 hover:underline">&larr; Volver al catálogo</a>
+    
+    <div class="bg-white shadow-lg rounded-lg p-6 mt-4">
+      <div class="flex flex-col md:flex-row gap-6">
+        <img src="https://wallpapers.com/images/hd/4k-manga-aavb7gpded3y5uou.jpg" alt="Vagabond" class="w-full md:w-1/3 h-auto object-cover rounded">
+        <div>
+          <h1 class="text-3xl font-bold mb-2">Vagabond</h1>
+          <p class="text-lg text-gray-600 mb-1"><strong>Autor:</strong> Takehiko Inoue</p>
+          <p class="text-lg text-gray-600 mb-1"><strong>Editorial:</strong> Ivrea España</p>
+          <p class="text-lg text-gray-600 mb-1"><strong>Género:</strong> Seinen, Histórico, Acción, Drama</p>
+          <p class="text-lg text-gray-600 mb-1"><strong>Estado:</strong> En pausa (hiato indefinido)</p>
+          <p class="text-lg text-gray-600 mb-1"><strong>Volúmenes publicados:</strong> 37</p>
+          <p class="text-lg text-gray-600 mb-4"><strong>Precio:</strong> $12.990</p>
+          <p class="text-gray-700 mb-4">
+            <strong>Sinopsis:</strong><br>
+            "Vagabond" es una adaptación del libro "Musashi" de Eiji Yoshikawa. La historia sigue la vida del legendario espadachín Miyamoto Musashi, mostrando su evolución física, espiritual y filosófica. Una obra intensa, con ilustraciones asombrosas y gran profundidad narrativa.
+          </p>
+          <p class="text-gray-700 mb-6">
+            <strong>Temas destacados:</strong> Honor, filosofía, violencia, autosuperación.
+          </p>
+
+          <!-- Botón de Comprar -->
+          <button onclick="agregarAlCarrito()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Comprar
+          </button>
+          <p id="mensajeCarrito" class="mt-2 text-green-600 font-semibold hidden">✅ Agregado al carrito</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Reseñas -->
+    <div class="bg-white shadow-md rounded-lg p-6 mt-6">
+      <h2 class="text-2xl font-bold mb-4">Reseñas de lectores</h2>
+      <div class="space-y-4">
+        <div class="border-l-4 border-blue-600 pl-4">
+          <p class="italic">"Una obra maestra. No solo por su arte, sino por la profundidad emocional y filosófica que transmite."</p>
+          <p class="text-sm text-gray-500 mt-1">— Camila, 5 estrellas</p>
+        </div>
+        <div class="border-l-4 border-blue-600 pl-4">
+          <p class="italic">"Cada página es una pintura. Lo mejor que he leído en manga histórico."</p>
+          <p class="text-sm text-gray-500 mt-1">— Joaquín, 4.5 estrellas</p>
+        </div>
+        <div class="border-l-4 border-blue-600 pl-4">
+          <p class="italic">"Ojalá algún día lo termine. Aun así, lo recomiendo con los ojos cerrados."</p>
+          <p class="text-sm text-gray-500 mt-1">— Ana, 4 estrellas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-semibold">MangaVerse</span>
+      </div>
+      <p class="mt-4 md:mt-0 text-sm">&copy; 2025 MangaVerse. Todos los derechos reservados.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-gray-400">Términos</a>
+        <a href="#" class="hover:text-gray-400">Soporte</a>
+        <a href="#" class="hover:text-gray-400">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

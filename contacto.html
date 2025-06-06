@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - MangaVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-no-repeat bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.9)), url('https://m.media-amazon.com/images/I/A1btp-E1m6L.jpg');">
+
+  <nav class="bg-red-400 py-8 relative z-20">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <a href="index.html">
+          <img src="./images/ChatGPT Image 5 jun 2025, 14_04_10.png" alt="Logo MangaVerse" class="h-16" />
+        </a>
+        <span class="text-white text-2xl font-semibold">MangaVerse</span>
+      </div>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+        <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+        <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+        <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button id="menuButton" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-red-600 p-4 space-y-4">
+      <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+      <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+      <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+      <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="max-w-xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg mt-12 mb-24 shadow-lg">
+    <h1 class="text-3xl font-bold mb-6 text-gray-900 text-center">Contáctanos en MangaVerse</h1>
+    <p class="mb-8 text-center text-gray-700">¿Tienes preguntas o quieres enviarnos comentarios? Completa el siguiente formulario y te responderemos pronto.</p>
+  
+    <form id="contactForm" novalidate class="space-y-6 max-w-md mx-auto">
+      <div>
+        <label for="name" class="block mb-2 font-semibold text-gray-800">Nombre completo</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre completo" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600" required />
+      </div>
+  
+      <div>
+        <label for="email" class="block mb-2 font-semibold text-gray-800">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600" required />
+      </div>
+  
+      <div>
+        <label for="subject" class="block mb-2 font-semibold text-gray-800">Asunto</label>
+        <input type="text" id="subject" name="subject" placeholder="Motivo del mensaje" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600" required />
+      </div>
+  
+      <div>
+        <label for="message" class="block mb-2 font-semibold text-gray-800">Mensaje</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-600" required></textarea>
+      </div>
+  
+      <button type="submit" class="block bg-red-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition w-full">Enviar mensaje</button>
+    </form>
+  </main>
+  
+
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-semibold">MangaVerse</span>
+      </div>
+      <p class="mt-4 md:mt-0 text-sm">&copy; 2025 MangaVerse. Todos los derechos reservados.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-gray-400">Términos</a>
+        <a href="#" class="hover:text-gray-400">Soporte</a>
+        <a href="#" class="hover:text-gray-400">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo - MangaVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-no-repeat bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.9)), url('https://m.media-amazon.com/images/I/A1btp-E1m6L.jpg');">
+  <nav class="bg-red-400 py-8 relative z-20">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <a href="index.html">
+          <img src="./images/ChatGPT Image 5 jun 2025, 14_04_10.png" alt="Logo MangaVerse" class="h-16" />
+        </a>
+        <span class="text-white text-2xl font-semibold">MangaVerse</span>
+      </div>
+
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+        <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+        <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+        <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button id="menuButton" class="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-red-600 p-4 space-y-4">
+      <a href="index.html" class="text-white hover:text-gray-400">Inicio</a>
+      <a href="catalogo.html" class="text-white hover:text-gray-400">Catálogo</a>
+      <a href="#" class="text-white hover:text-gray-400">Ofertas</a>
+      <a href="contacto.html" class="text-white hover:text-gray-400">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Título principal -->
+  <section class="text-center my-8">
+    <h2 class="text-3xl font-bold text-white">Catálogo de Mangas</h2>
+    <p class="text-gray-300 mt-2">Explora nuestra colección de mangas populares y descubre tu próxima lectura</p>
+  </section>
+
+  <!-- Lista de mangas -->
+  <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-10">
+    
+        <!-- Vagabond -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapers.com/images/hd/4k-manga-aavb7gpded3y5uou.jpg" alt="Vagabond" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Vagabond</h3>
+        <p class="text-sm text-gray-600">Autor: Takehiko Inoue</p>
+        <p class="text-sm text-gray-600">Editorial: Ivrea España</p>
+        <p class="text-sm text-gray-600">Precio: $12.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+
+    <!-- Vinland Saga -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://i.redd.it/tw8ya3bc74hb1.png" alt="Vinland Saga" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Vinland Saga</h3>
+        <p class="text-sm text-gray-600">Autor: Makoto Yukimura</p>
+        <p class="text-sm text-gray-600">Editorial: Planeta</p>
+        <p class="text-sm text-gray-600">Precio: $13.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Berserk -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapers.com/images/hd/idle-swordsman-guts-berserk-bevobdbns6bzb85k.jpg" alt="Berserk" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Berserk</h3>
+        <p class="text-sm text-gray-600">Autor: Kentaro Miura</p>
+        <p class="text-sm text-gray-600">Editorial: Panini</p>
+        <p class="text-sm text-gray-600">Precio: $14.490</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Death Note -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapersok.com/images/high/death-note-l-manga-2ik49w21uapyd8q5.jpg" alt="Death Note" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Death Note</h3>
+        <p class="text-sm text-gray-600">Autor: Tsugumi Ohba</p>
+        <p class="text-sm text-gray-600">Editorial: Norma Editorial</p>
+        <p class="text-sm text-gray-600">Precio: $9.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Fullmetal Alchemist -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://i.pinimg.com/736x/2c/cd/dd/2ccdddaf96cc0caec63f718dbe9e8c94.jpg" alt="Fullmetal Alchemist" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Fullmetal Alchemist</h3>
+        <p class="text-sm text-gray-600">Autor: Hiromu Arakawa</p>
+        <p class="text-sm text-gray-600">Editorial: Norma Editorial</p>
+        <p class="text-sm text-gray-600">Precio: $13.490</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Hunter x Hunter -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://images6.alphacoders.com/840/thumb-1920-840252.jpg" alt="Hunter x Hunter" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Hunter x Hunter</h3>
+        <p class="text-sm text-gray-600">Autor: Yoshihiro Togashi</p>
+        <p class="text-sm text-gray-600">Editorial: Panini México</p>
+        <p class="text-sm text-gray-600">Precio: $12.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- One Piece -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapers.com/images/hd/one-piece-manga-1920-x-1080-wallpaper-g15i7de4hxdpfo08.jpg" alt="One Piece" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">One Piece</h3>
+        <p class="text-sm text-gray-600">Autor: Eiichiro Oda</p>
+        <p class="text-sm text-gray-600">Editorial: Panini México</p>
+        <p class="text-sm text-gray-600">Precio: $9.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Jujutsu Kaisen -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapers.com/images/hd/handsome-gojo-jujutsu-kaisen-manga-b0a89to1nqdkglfw.jpg" alt="Jujutsu Kaisen" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Jujutsu Kaisen</h3>
+        <p class="text-sm text-gray-600">Autor: Gege Akutami</p>
+        <p class="text-sm text-gray-600">Editorial: Panini España</p>
+        <p class="text-sm text-gray-600">Precio: $8.490</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Chainsaw Man -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://images.alphacoders.com/128/1280518.jpg" alt="Chainsaw Man" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Chainsaw Man</h3>
+        <p class="text-sm text-gray-600">Autor: Tatsuki Fujimoto</p>
+        <p class="text-sm text-gray-600">Editorial: Ivrea España</p>
+        <p class="text-sm text-gray-600">Precio: $7.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Attack on Titan -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://wallpapers.com/images/hd/aot-manga-eonlkz1ff5aox41g.jpg" alt="Attack on Titan" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Attack on Titan</h3>
+        <p class="text-sm text-gray-600">Autor: Hajime Isayama</p>
+        <p class="text-sm text-gray-600">Editorial: Norma Editorial</p>
+        <p class="text-sm text-gray-600">Precio: $10.490</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Adolf -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://www.japanzon.com/102463-product_large/message-to-adolf-adorufu-ni-tsugu-vol1-tezuka-osamu-the-complete-works-japanese-version.jpg" alt="Adolf" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Adolf</h3>
+        <p class="text-sm text-gray-600">Autor: Osamu Tezuka</p>
+        <p class="text-sm text-gray-600">Editorial: Planeta</p>
+        <p class="text-sm text-gray-600">Precio: $10.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+    <!-- Berserk Deluxe -->
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+    <img src="https://external-preview.redd.it/fB6t-bBm7gI4U3y82fq3wAXGgqrLSCZO8oJ28Rx70KQ.jpg?auto=webp&s=ebd5a880d228da5cf33aebf9f5eecd066cd7cc50" alt="Berserk Deluxe" class="w-full h-64 object-cover" />
+    <div class="p-4">
+        <h3 class="text-xl font-semibold">Berserk Deluxe</h3>
+        <p class="text-sm text-gray-600">Autor: Kentaro Miura</p>
+        <p class="text-sm text-gray-600">Editorial: Dark Horse Manga </p>
+        <p class="text-sm text-gray-600">Precio: $41.990</p>
+        <a href="detalleVagabond.html" class="mt-4 inline-block bg-red-200 text-gray-800 px-4 py-2 rounded hover:bg-red-300 transition text-center">Ver más</a>
+    </div>
+    </div>
+
+  </main>
+
+      <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-semibold">MangaVerse</span>
+      </div>
+      <p class="mt-4 md:mt-0 text-sm">&copy; 2025 MangaVerse. Todos los derechos reservados.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-gray-400">Términos</a>
+        <a href="#" class="hover:text-gray-400">Soporte</a>
+        <a href="#" class="hover:text-gray-400">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
